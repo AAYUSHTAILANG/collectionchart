@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Collections Table</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 20px;
+    }
+
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Java Collections Table</h2>
+
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Collection</th>
+        <th>Package</th>
+        <th>Implements</th>
+        <th>Underlying DS</th>
+        <th>Type of Data</th>
+        <th>Insertion Order</th>
+        <th>Duplicate Value</th>
+        <th>Null Value</th>
+        <th>Sorted Data</th>
+        <th>Synchronised</th>
+        <th>Data Stored In</th>
+        <th>Capacity</th>
+        <th>Load Factor</th>
+        <th>Legacy Class</th>
+        <th>Intro In</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ArrayList</td>
+        <td>java.util</td>
+        <td>List</td>
+        <td>Growable Array</td>
+        <td>Heterogeneous</td>
+        <td>Maintained</td>
+        <td>Allowed</td>
+        <td>Allowed</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Index</td>
+        <td>10</td>
+        <td>-</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>LinkedList</td>
+        <td>java.util</td>
+        <td>List and Deque</td>
+        <td>Doubly/circular linked list</td>
+        <td>Heterogeneous</td>
+        <td>Maintained</td>
+        <td>Allowed</td>
+        <td>Allowed</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Index</td>
+        <td>-</td>
+        <td>-</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>HashSet</td>
+        <td>java.util</td>
+        <td>Set</td>
+        <td>HashTable</td>
+        <td>Heterogeneous</td>
+        <td>Not maintained</td>
+        <td>Not allowed</td>
+        <td>Only 1</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Hashcode()</td>
+        <td>16</td>
+        <td>0.75</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>TreeSet</td>
+        <td>java.util</td>
+        <td>SortedSet</td>
+        <td>Balanced Tree</td>
+        <td>Homogeneous</td>
+        <td>Not maintained</td>
+        <td>Not allowed</td>
+        <td>Not allowed</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>compareTo()</td>
+        <td>11</td>
+        <td>-</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>HashMap</td>
+        <td>java.util</td>
+        <td>Map</td>
+        <td>HashTable</td>
+        <td>Heterogeneous</td>
+        <td>Not maintained</td>
+        <td>Key->no value->yes</td>
+        <td>Key->1 value->many</td>
+        <td>No</td>
+        <td>No</td>
+        <td>KEY-VALUE PAIR</td>
+        <td>16</td>
+        <td>0.75</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>TreeMap</td>
+        <td>java.util</td>
+        <td>SortedMap</td>
+        <td>Red-Black Tree</td>
+        <td>Homogeneous</td>
+        <td>Not maintained</td>
+        <td>Key->no value->yes</td>
+        <td>Key->1 value->many</td>
+        <td>Yes</td>
+        <td>No</td>
+        <td>KEY-VALUE PAIR</td>
+        <td>-</td>
+        <td>-</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>Hashtable</td>
+        <td>java.util</td>
+        <td>Map and Dictionary</td>
+        <td>HashTable</td>
+        <td>Heterogeneous</td>
+        <td>Not maintained</td>
+        <td>Key->no value->yes</td>
+        <td>Key->1 value->many</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>KEY-VALUE PAIR</td>
+        <td>11</td>
+        <td>0.75</td>
+        <td>Yes</td>
+        <td>JDK 1.0</td>
+      </tr>
+      <tr>
+        <td>Vector</td>
+        <td>java.util</td>
+        <td>List</td>
+        <td>Growable Array</td>
+        <td>Heterogeneous</td>
+        <td>Maintained</td>
+        <td>Allowed</td>
+        <td>Allowed</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Index</td>
+        <td>10</td>
+        <td>-</td>
+        <td>Yes</td>
+        <td>JDK 1.0</td>
+      </tr>
+      <tr>
+        <td>Stack</td>
+        <td>java.util</td>
+        <td>List</td>
+        <td>Growable Array</td>
+        <td>Heterogeneous</td>
+        <td>Maintained</td>
+        <td>Allowed</td>
+        <td>Allowed</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Index</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Yes</td>
+        <td>JDK 1.0</td>
+      </tr>
+      <tr>
+        <td>LinkedHashMap</td>
+        <td>java.util</td>
+        <td>Map</td>
+        <td>HashTable + Linked List</td>
+        <td>Heterogeneous</td>
+        <td>Maintained</td>
+        <td>Key->no value->yes</td>
+        <td>Key->1 value->many</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>KEY-VALUE PAIR</td>
+        <td>-</td>
+        <td>-</td>
+        <td>Yes</td>
+        <td>JDK 1.2</td>
+      </tr>
+      <tr>
+        <td>PriorityQueue</td>
+        <td>java.util</td>
+        <td>Queue</td>
+        <td>Priority Queue</td>
+        <td>Heterogeneous</td>
+        <td>Maintained</td>
+        <td>Not allowed</td>
+        <td>Not allowed</td>
+        <td>No</td>
+        <td>No</td>
+        <td>PRIORITY</td>
+        <td>-</td>
+        <td>-</td>
+        <td>No</td>
+        <td>JDK 1.2</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Bootstrap JS and Popper.js (for some Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
